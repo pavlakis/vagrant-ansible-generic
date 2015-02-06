@@ -18,5 +18,8 @@
 - name: mysql | Create databases
   mysql_db: name={{ mysql.database }} state=present login_user=root login_password={{ mysql.root_password }}
 
+- name: mysql | Import database
+  mysql_db: name=mysitedb state=import login_user=root login_password={{ mysql.root_password }} target=/vagrant/install/db/mysql/db_schema.sql
+
 - name: mysql | Create users
   mysql_user: name={{ mysql.user }} password={{ mysql.password }} priv={{ mysql.database }}.*:ALL state=present login_user=root login_password={{ mysql.root_password }}
