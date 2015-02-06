@@ -3,7 +3,7 @@ A generic Vagrant recipe using the Ansible provisioner and initial configuration
 
 # Steps 1 - 4
 
-Follow steps 1 - 4 to configure a generated template from Phansible.com to (commits on each step):
+Follow branches step1 - 4 to configure a generated template from Phansible.com to (commits on each step):
 
 ### (step1)
 
